@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>AquaEden - Free Bootstrap 4 Template by Colorlib</title>
+		<link rel="shortcut icon" href="/images/favicon.ico" />
+
+		<title>AquaEden</title>
 		<meta charset="utf-8" />
 		<meta
 			name="viewport"
@@ -30,6 +32,15 @@
 		<link rel="stylesheet" href="css/flaticon.css" />
 		<link rel="stylesheet" href="css/icomoon.css" />
 		<link rel="stylesheet" href="css/style.css" />
+    		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+		/>
+
+		<script
+			src="https://kit.fontawesome.com/29b275fb0c.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
 	<body class="goto-here">
 		<div class="py-1 bg-black">
@@ -45,7 +56,7 @@
 								>
 									<span class="icon-phone2"></span>
 								</div>
-								<span class="text">+ 1235 2355 98</span>
+								<span class="text">850.737.5474</span>
 							</div>
 							<div class="col-md pr-4 d-flex topper align-items-center">
 								<div
@@ -72,7 +83,7 @@
 			id="ftco-navbar"
 		>
 			<div class="container">
-				<a class="navbar-brand" href="index.html">AquaEden</a>
+				<a class="navbar-brand" href="index.html">Aqua Eden</a>
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -120,7 +131,8 @@
 						</li>
 						<li class="nav-item cta cta-colored">
 							<a href="cart.html" class="nav-link"
-								><span class="icon-shopping_cart"></span>[0]</a
+								><span class="bi bi-cart2 cartAmount" id="cartAmount"></span
+								>[0]</a
 							>
 						</li>
 					</ul>
@@ -131,7 +143,7 @@
 
 		<div
 			class="hero-wrap hero-bread"
-			style="background-image: url('images/bg_6.jpg')"
+			style="background-image: url('images/bg_6.png')"
 		>
 			<div class="container">
 				<div
@@ -148,7 +160,7 @@
 			</div>
 		</div>
 
-		<section class="ftco-section ftco-cart">
+		<section class="ftco-section ftco-cart shopping-cart">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 ftco-animate">
@@ -165,19 +177,21 @@
 									</tr>
 								</thead>
 								<tbody>
-									<tr class="text-center">
+									<tr class="text-center" id="label">
 										<td class="product-remove">
-											<a href="#"><span class="ion-ios-close"></span></a>
+											<a href="#"
+												><span class="ion-ios-close cart-remove"></span
+											></a>
 										</td>
 
 										<td class="image-prod">
 											<div
-												class="img"
+												class="img cart-img"
 												style="background-image: url(images/product-3.jpg)"
 											></div>
 										</td>
 
-										<td class="product-name">
+										<td class="product-name cart-title">
 											<h3>Young Woman Wearing Dress</h3>
 											<p>
 												Far far away, behind the word mountains, far from the
@@ -185,14 +199,14 @@
 											</p>
 										</td>
 
-										<td class="price">$4.90</td>
+										<td class="price cart-price">$4.90</td>
 
 										<td class="quantity">
 											<div class="input-group mb-3">
 												<input
 													type="text"
 													name="quantity"
-													class="quantity form-control input-number"
+													class="quantity form-control input-number cart-quantity"
 													value="1"
 													min="1"
 													max="100"
@@ -200,38 +214,42 @@
 											</div>
 										</td>
 
-										<td class="total">$4.90</td>
+										<td class="total cart-price">$4.90</td>
 									</tr>
 									<!-- END TR-->
 
-									<tr class="text-center">
+									<tr class="text-center cart-box">
 										<td class="product-remove">
-											<a href="#"><span class="ion-ios-close"></span></a>
+											<a href="#"
+												><span class="ion-ios-close cart-remove"></span
+											></a>
 										</td>
 
 										<td class="image-prod">
 											<div
-												class="img"
+												class="img cart-img"
 												style="background-image: url(images/product-4.jpg)"
 											></div>
 										</td>
 
-										<td class="product-name">
-											<h3>Young Woman Wearing Dress</h3>
+										<td class="product-name detail-box">
+											<h3 class="cart-product-title">
+												Young Woman Wearing Dress
+											</h3>
 											<p>
 												Far far away, behind the word mountains, far from the
 												countries
 											</p>
 										</td>
 
-										<td class="price">$15.70</td>
+										<td class="price cart-price">$15.70</td>
 
 										<td class="quantity">
 											<div class="input-group mb-3">
 												<input
 													type="text"
 													name="quantity"
-													class="quantity form-control input-number"
+													class="quantity form-control input-number cart-quantity"
 													value="1"
 													min="1"
 													max="100"
@@ -239,7 +257,7 @@
 											</div>
 										</td>
 
-										<td class="total">$15.70</td>
+										<td class="total cart-amt">$15.70</td>
 									</tr>
 									<!-- END TR-->
 								</tbody>
@@ -433,6 +451,7 @@
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 		<script src="js/google-map.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/cart.js"></script>
 
 		<script>
 			$(document).ready(function () {

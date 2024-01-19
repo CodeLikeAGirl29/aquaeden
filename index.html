@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>AquaEden - Free Bootstrap 4 Template by Colorlib</title>
+		<link rel="shortcut icon" href="/images/favicon.ico" />
+
+		<title>AquaEden</title>
 		<meta charset="utf-8" />
 		<meta
 			name="viewport"
@@ -30,6 +32,10 @@
 		<link rel="stylesheet" href="css/flaticon.css" />
 		<link rel="stylesheet" href="css/icomoon.css" />
 		<link rel="stylesheet" href="css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+		/>
 
 		<script
 			src="https://kit.fontawesome.com/29b275fb0c.js"
@@ -58,14 +64,14 @@
 								>
 									<span class="icon-paper-plane"></span>
 								</div>
-								<span class="text">youremail@email.com</span>
+								<span class="text">support@aquaeden.com</span>
 							</div>
 							<div
 								class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right"
 							>
-								<span class="text"
-									>3-5 Business days delivery &amp; Free Returns</span
-								>
+								<span class="icon-truck mr-3 text">
+									3-5 Business days delivery &amp; Free Returns
+								</span>
 							</div>
 						</div>
 					</div>
@@ -77,7 +83,7 @@
 			id="ftco-navbar"
 		>
 			<div class="container">
-				<a class="navbar-brand" href="index.html">AquaEden</a>
+				<a class="navbar-brand" href="index.html">Aqua Eden</a>
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -124,8 +130,9 @@
 							<a href="contact.html" class="nav-link">Contact</a>
 						</li>
 						<li class="nav-item cta cta-colored">
-							<a href="cart.html" class="nav-link"
-								><span class="icon-shopping_cart"></span>[0]</a
+							<a href="#" class="nav-link"
+								><span class="bi bi-cart2 cartAmount" id="cartAmount"></span
+								>[0]</a
 							>
 						</li>
 					</ul>
@@ -164,9 +171,11 @@
 											Where Aquatic Dreams <br /><span> Come to Life</span>
 										</h1>
 										<p>
-											A small river named Duden flows by their place and
-											supplies it with the necessary regelialia. It is a
-											paradisematic country.
+											Aqua Eden invites you to embark on an enchanting journey
+											into the wonders of the underwater realm. Join us in
+											discovering the magic of the aquatic world, as we strive
+											to create an oasis of wonder and knowledge for enthusiasts
+											of all ages.
 										</p>
 
 										<p>
@@ -209,14 +218,19 @@
 											Discover the Beauty <span>Beneath</span> the Surface
 										</h1>
 										<p>
-											A small river named Duden flows by their place and
-											supplies it with the necessary regelialia. It is a
-											paradisematic country.
+											Immerse yourself in a world of tranquility, where vibrant
+											marine life, captivating exhibits, and educational
+											experiences come together. Explore the extraordinary at
+											Aqua Eden, where every visit promises to be a dive into
+											serenity and a celebration of the beauty that lies beneath
+											the waves.
 										</p>
 
 										<p>
-											<a href="#" class="btn btn-primary px-5 py-3 mt-3"
-												>Shop Now</a
+											<a
+												href="about.html"
+												class="btn btn-primary px-5 py-3 mt-3"
+												>Learn More</a
 											>
 										</p>
 									</div>
@@ -233,7 +247,7 @@
 				<div class="row">
 					<div
 						class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center"
-						style="background-image: url(images/about.jpg)"
+						style="background-image: url(images/about.png)"
 					>
 						<a
 							href="https://vimeo.com/45830194"
@@ -245,7 +259,7 @@
 					<div class="col-md-7 py-5 wrap-about pb-md-5 ftco-animate">
 						<div class="heading-section-bold mb-4 mt-md-5">
 							<div class="ml-md-0">
-								<h2 class="mb-4">Better Way to Ship Your Products</h2>
+								<h2 class="mb-4">A World Beneath the Waves</h2>
 							</div>
 						</div>
 						<div class="pb-md-5">
@@ -263,13 +277,14 @@
 										<div
 											class="icon d-flex justify-content-center align-items-center mb-4"
 										>
-											<span class="flaticon-002-recommended"></span>
+											<span class="fa-solid fa-fish-fins"></span>
 										</div>
 										<div class="media-body">
-											<h3 class="heading">Refund Policy</h3>
+											<h3 class="heading">Exotic Fish Exhibits</h3>
 											<p>
-												Even the all-powerful Pointing has no control about the
-												blind texts it is an almost unorthographic.
+												Explore a mesmerizing collection of colorful &amp;
+												exotic fish. Learn about different species &amp; their
+												unique habitats.
 											</p>
 										</div>
 									</div>
@@ -281,13 +296,14 @@
 										<div
 											class="icon d-flex justify-content-center align-items-center mb-4"
 										>
-											<span class="flaticon-001-box"></span>
+											<span class="fa-solid fa-magnifying-glass"></span>
 										</div>
 										<div class="media-body">
-											<h3 class="heading">Premium Packaging</h3>
+											<h3 class="heading">Interactive Touch Pools</h3>
 											<p>
-												Even the all-powerful Pointing has no control about the
-												blind texts it is an almost unorthographic.
+												Get hands-on with friendly sea creatures in our touch
+												pools. Experience the thrill of touching starfish, sea
+												anemones, and more.
 											</p>
 										</div>
 									</div>
@@ -299,13 +315,14 @@
 										<div
 											class="icon d-flex justify-content-center align-items-center mb-4"
 										>
-											<span class="flaticon-003-medal"></span>
+											<span class="fa-solid fa-graduation-cap"></span>
 										</div>
 										<div class="media-body">
-											<h3 class="heading">Superior Quality</h3>
+											<h3 class="heading">Educational Workshops</h3>
 											<p>
-												Even the all-powerful Pointing has no control about the
-												blind texts it is an almost unorthographic.
+												Join informative workshops for all ages. Learn about
+												marine ecosystems, conservation, and sustainable
+												practices.
 											</p>
 										</div>
 									</div>

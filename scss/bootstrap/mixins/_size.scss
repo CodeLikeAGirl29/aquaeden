@@ -1,6 +1,10 @@
 // Sizing shortcuts
 
 @mixin size($width, $height: $width) {
-  width: $width;
-  height: $height;
+	width: $width;
+	height: $height;
+}
+
+@mixin width($value) {
+	width: ($value / 16) + rem;
 }
