@@ -69,6 +69,12 @@
      margin-top: 0;
      margin-bottom: 1rem;
 }
+
+.paragraph {
+color: #9FE2BF;
+text-shadow: 2px 1px 1px rgba(0, 0, 0, 1);
+}
+
  abbr[title], abbr[data-original-title] {
      text-decoration: underline;
      -webkit-text-decoration: underline dotted;
@@ -269,8 +275,16 @@
  h1, .h1 {
      font-size: 2.5rem;
 }
- h2, .h2 {
+.h2 {
      font-size: 2rem;
+     text-shadow: 2px 2px 0px rgba(64, 116, 181, 1),
+               2px -2px 0px rgba(64, 116, 181, 1),
+			   -2px 2px 0px rgba(64, 116, 181, 1),
+			   -2px -2px 0px rgba(64, 116, 181, 1),
+			   2px 0px 0px rgba(64, 116, 181, 1),
+			   0px 2px 0px rgba(64, 116, 181, 1),
+			   -2px 0px 0px rgba(64, 116, 181, 1),
+			   0px -2px 0px rgba(64, 116, 181, 1);
 }
  h3, .h3 {
      font-size: 1.75rem;
@@ -11002,3 +11016,71 @@ text-shadow: 2px 1px 0px rgba(255, 255, 255, 1);
  .ion-md-arrow-back {
   color: black !important;
  }
+
+/*  social icons */
+ul.social-icons {
+  position:absolute;
+  top:80%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  margin:0;
+  padding:25px;
+  display:flex;
+}
+
+ul.social-icons > li {
+  list-style: none;
+}
+
+ul.social-icons > li a {
+  position: relative;
+  width:60px;
+  height:60px;
+  display:block;
+  text-align:center;
+  margin:0 10px;
+  border-radius: 50%;
+  padding: 6px;
+  box-sizing: border-box;
+  text-decoration:none;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  background: linear-gradient(0deg, #ddd, #fff);
+  transition: .5s;
+}
+
+ul.social-icons > li a:hover {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  text-decoration:none;
+}
+
+ul.social-icons > li a .fab {
+  width: 100%;
+  height:100%;
+  display:block;
+  background: linear-gradient(0deg, #fff, #ddd);
+  border-radius: 50%;
+  line-height: calc(60px - 12px);
+  font-size:24px;
+  color: #262626;
+  transition: .5s;
+}
+
+ul.social-icons > li:nth-child(1) a:hover .fab {
+  color: #3b5998;
+}
+
+ul.social-icons > li:nth-child(2) a:hover .fab {
+  color: #00aced;
+}
+
+ul.social-icons > li:nth-child(3) a:hover .fab {
+  color: #dd4b39;
+}
+
+ul.social-icons > li:nth-child(4) a:hover .fab {
+  color: #007bb6;
+}
+
+ul.social-icons > li:nth-child(5) a:hover .fab {
+  color: #e4405f;
+}
